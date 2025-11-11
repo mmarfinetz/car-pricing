@@ -18,17 +18,21 @@ pip-delete-this-directory.txt
 .env
 .env.local
 
-# Models (too large for git)
-*.pkl
-*.joblib
+# Models (too large for git - but we'll generate them during build)
+# *.pkl  # Commented out - we generate these during deployment
+# *.joblib
 *.h5
 models.zip
 
-# Data
-*.csv
+# Data (but allow the training dataset)
+# *.csv  # Commented out - we need used_cars (1).csv for training
 *.parquet
 data/raw_cache/
 data/features/
+
+# Specifically ignore large data files we don't need
+data/*.csv
+*.backup.csv
 
 # IDE
 .vscode/
