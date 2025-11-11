@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Environment
+.env
+.env.local
+
+# Models (too large for git)
+*.pkl
+*.joblib
+*.h5
+models.zip
+
+# Data
+*.csv
+*.parquet
+data/raw_cache/
+data/features/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing
+.coverage
+.pytest_cache/
+
+# Temporary
+*.tmp
+*.bak
+~*

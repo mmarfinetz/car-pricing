@@ -1,0 +1,17 @@
+{
+  "training_date": "2025-11-11T04:01:19.322882",
+  "model_version": "1.0.0",
+  "features": {
+    "num_features": 7,
+    "cat_features": 5,
+    "macro_features": 0
+  },
+  "performance": {
+    "tree_wape": 0.1307932870936817,
+    "tree_mae": 1.245130420673342,
+    "glm_wape": 0.24519524126423095,
+    "glm_mae": 2.3342180679636866
+  },
+  "training_samples": 5802,
+  "random_state": 42
+}
