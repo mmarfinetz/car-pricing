@@ -286,9 +286,12 @@ if __name__ == '__main__':
     print("ACV USED CAR PRICING API")
     print("="*60)
     print(f"Model loaded: {MODEL is not None}")
-    print("Starting server on http://localhost:5000")
+
+    # Use Railway's PORT environment variable if available
+    port = int(os.environ.get('PORT', 5000))
+    print(f"Starting server on port {port}")
     print("\nTest with:")
     print('curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d \'{"Year":2018,"Kilometers_Driven":50000,"Fuel_Type":"Petrol","Transmission":"Manual"}\'')
     print("="*60)
 
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=False)
